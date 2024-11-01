@@ -11,148 +11,148 @@
   </head>
   <body>
     <!-- the "content"-class will contain all the content of this HTML-page, to be able to set 1024px-width and to be centered. -->
-    <div class="content">
-      <header>
-        <!-- I put the sitename and nav in divs, to place them sidebyside -->
-        <div class="headerSiteName">
-          <h1>Tobias HTML/CSS Assignment.</h1>
-        </div>
 
-        <div class="headerNav">
-          <nav>
-            <ul>
-              <li class="active"><a href="#">Start</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-      <!-- The <main> and <aside> will be side-by-side, so i to put them in a div-container called "mainContent" -->
-      <div class="mainContent">
-        <main>
-          <div class="mainHeader">
-            <!-- to just fill a small portion of the div like on the layoutimage, we need a div for the content in mainHeader: -->
-            <div class="mainHeaderContent">
-              <h2>Welcome to this homepage!</h2>
-            </div>
-          </div>
-
-          <div class="subHeader">
-            <h3>Articles</h3>
-            <p>Here down below you will find two articles.</p>
-            <br />
-          </div>
-          <br /><br />
-          <!-- the articles will be side by side, so i put them in a div-container called articles. -->
-          <div class="articles">
-            <article>
-              <div class="articleContent">
-                <h3>Article 1 - About the &lt;article&gt; HTML tag.</h3>
-                <p>
-                  The article HTML element represents a self-contained
-                  composition in a document, page, application, or site, which
-                  is intended to be independently distributable or reusable
-                  (e.g., in syndication). Examples include: a forum post, a
-                  magazine or newspaper article, or a blog entry, a product
-                  card, a user-submitted comment, an interactive widget or
-                  gadget, or any other independent item of content.
-                </p>
-                <p>
-                  <!-- The second paragraph in the first article should be bold and blue. -->
-                  <span class="blueBold">
-                    A given document can have multiple articles in it; for
-                    example, on a blog that shows the text of each article one
-                    after another as the reader scrolls, each post would be
-                    contained in an &lt;article&gt; element, possibly with one
-                    or more &lt;section&gt;s within.
-                  </span>
-                  <br />
-                  <img src="https://picsum.photos/200" />
-                </p>
-                <p>
-                  Article is from:
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
-                    >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article</a
-                  >
-                </p>
-              </div>
-            </article>
-
-            <article>
-              <div class="articleContent">
-                <h3>Article 2 - About Lorem ipsum</h3>
-                <p>
-                  <b>What is Lorem Ipsum?</b> Lorem Ipsum is simply dummy text
-                  of the printing and typesetting industry. Lorem Ipsum has been
-                  the industry's standard dummy text ever since the 1500s, when
-                  an unknown printer took a galley of type and scrambled it to
-                  make a type specimen book. It has survived not only five
-                  centuries, but also the leap into electronic typesetting,
-                  remaining essentially unchanged. It was popularised in the
-                  1960s with the release of Letraset sheets containing Lorem
-                  Ipsum passages, and more recently with desktop publishing
-                  software like Aldus PageMaker including versions of Lorem
-                  Ipsum.
-                </p>
-                <p>
-                  <b>Example of Lorem Ipsum:</b>
-                  <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aenean sit amet rhoncus enim. Duis gravida, erat quis euismod
-                  iaculis, felis nisl commodo massa, rutrum molestie felis leo
-                  sit amet nisl. Donec feugiat augue purus, non efficitur enim
-                  facilisis sit amet. Aenean vitae ultricies lacus, quis mattis
-                  lacus. Fusce ornare pellentesque iaculis. Pellentesque ac
-                  pharetra sapien, et porttitor dolor. Maecenas placerat nec
-                  enim iaculis auctor. Duis eget viverra erat. Donec purus dui,
-                  porttitor ut justo sed, sagittis tempus dolor. Vestibulum
-                  finibus bibendum mauris, sed interdum augue malesuada non.
-                  Curabitur volutpat dolor at lacus finibus, ac finibus est
-                  sodales. Vivamus ut sollicitudin arcu.
-                </p>
-              </div>
-            </article>
-          </div>
-        </main>
-
-        <aside>
-          <div class="asideContent">
-            <h2>Countries and their 3 biggest citys:</h2>
-            <!-- The unsorted list should have altering colors between red and green. -->
-            <ul class="alterColorList">
-              <li>
-                Sweden
-                <ol>
-                  <li>Stockholm</li>
-                  <li>Göteborg</li>
-                  <li>Malmö</li>
-                </ol>
-              </li>
-              <li>
-                Norway
-                <ol>
-                  <li>Oslo</li>
-                  <li>Bergen</li>
-                  <li>Stavanger / Sandnes</li>
-                </ol>
-              </li>
-              <li>
-                Greenland
-                <ol>
-                  <li>Nuuk</li>
-                  <li>Sisimiut</li>
-                  <li>Ilulissat</li>
-                </ol>
-              </li>
-            </ul>
-          </div>
-        </aside>
+    <header>
+      <!-- I put the sitename and nav in divs, to place them sidebyside -->
+      <div class="headerSiteName">
+        <h1>Tobias HTML/CSS</h1>
       </div>
 
-      <footer>&copy; Tobias Eriksson 2024</footer>
-    </div>
+      <div class="headerNav">
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Start</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- The <main> and <aside> will be side-by-side, so i to put them in a div-container called "mainContent" -->
+
+    <main>
+      <!-- The mainContent will be to the left -->
+      <div class="mainContent">
+        <div class="mainHeader">
+          <!-- to just fill a small portion of the div like on the layoutimage, we need a div for the content in mainHeader: -->
+          <div class="mainHeaderContent">
+            <h2>Welcome to this homepage!</h2>
+          </div>
+        </div>
+
+        <div class="subHeader">
+          <h3>Articles</h3>
+          <p>Here down below you will find two articles.</p>
+          <br />
+        </div>
+        <br />
+        <!-- the articles will be side by side, so i put them in a div-container called articles. -->
+        <div class="articles">
+          <article>
+            <div class="articleContent">
+              <h3>Article 1 - About the &lt;article&gt; HTML tag.</h3>
+              <p>
+                The article HTML element represents a self-contained composition
+                in a document, page, application, or site, which is intended to
+                be independently distributable or reusable (e.g., in
+                syndication). Examples include: a forum post, a magazine or
+                newspaper article, or a blog entry, a product card, a
+                user-submitted comment, an interactive widget or gadget, or any
+                other independent item of content.
+              </p>
+              <p>
+                <!-- The second paragraph in the first article should be bold and blue. -->
+                <span class="blueBold">
+                  A given document can have multiple articles in it; for
+                  example, on a blog that shows the text of each article one
+                  after another as the reader scrolls, each post would be
+                  contained in an &lt;article&gt; element, possibly with one or
+                  more &lt;section&gt;s within.
+                </span>
+                <br />
+                <img src="https://picsum.photos/200" />
+              </p>
+              <p>
+                Article is from:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article"
+                  >https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article</a
+                >
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <div class="articleContent">
+              <h3>Article 2 - About Lorem ipsum</h3>
+              <p>
+                <b>What is Lorem Ipsum?</b> Lorem Ipsum is simply dummy text of
+                the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and scrambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially
+                unchanged. It was popularised in the 1960s with the release of
+                Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+              </p>
+              <p>
+                <b>Example of Lorem Ipsum:</b>
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                sit amet rhoncus enim. Duis gravida, erat quis euismod iaculis,
+                felis nisl commodo massa, rutrum molestie felis leo sit amet
+                nisl. Donec feugiat augue purus, non efficitur enim facilisis
+                sit amet. Aenean vitae ultricies lacus, quis mattis lacus. Fusce
+                ornare pellentesque iaculis. Pellentesque ac pharetra sapien, et
+                porttitor dolor. Maecenas placerat nec enim iaculis auctor. Duis
+                eget viverra erat. Donec purus dui, porttitor ut justo sed,
+                sagittis tempus dolor. Vestibulum finibus bibendum mauris, sed
+                interdum augue malesuada non. Curabitur volutpat dolor at lacus
+                finibus, ac finibus est sodales. Vivamus ut sollicitudin arcu.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- This aside will be to the right in the layout -->
+      <aside>
+        <div class="asideContent">
+          <h2>Countries and their 3 biggest citys:</h2>
+          <!-- The unsorted list should have altering colors between red and green. -->
+          <ul class="alterColorList">
+            <li>
+              Sweden
+              <ol>
+                <li>Stockholm</li>
+                <li>Göteborg</li>
+                <li>Malmö</li>
+              </ol>
+            </li>
+            <li>
+              Norway
+              <ol>
+                <li>Oslo</li>
+                <li>Bergen</li>
+                <li>Stavanger / Sandnes</li>
+              </ol>
+            </li>
+            <li>
+              Greenland
+              <ol>
+                <li>Nuuk</li>
+                <li>Sisimiut</li>
+                <li>Ilulissat</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer>&copy; Tobias Eriksson 2024</footer>
   </body>
 </html>
